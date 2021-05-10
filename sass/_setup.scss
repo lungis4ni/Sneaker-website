@@ -1,0 +1,118 @@
+//----------------------------Colors------------------
+$pk: #E503D1;
+$lm: #0edb22;
+$bl: #0071FF;
+$rd: #EF0021;
+$lb: #07D0CA;
+$bg: #222222;
+$wht: #e2e7ee;
+$or: #FF0000;
+$gr:#8E8E8E;
+
+$random: #0d0d0e;
+$margin: 2vw;
+
+//----------------------------Fonts--------------------
+@font-face
+{
+    src: url(../fonts/Gotham-Medium.ttf);
+    font-family: 'Med';
+}
+
+@font-face
+{
+    src: url(../fonts/Gotham-Black.otf);
+    font-family: 'Bla';
+}
+
+@font-face
+{
+    src: url(../fonts/Gotham-Bold.otf);
+    font-family: 'Bo';
+}
+
+@font-face
+{
+    src: url(../fonts/Gotham-Light.otf);
+    font-family: 'Li';
+}
+
+@mixin setup
+{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Med';
+}
+
+// -----------------------------Position--------------
+@mixin relative($top:null, $bottom:null, $left:null, $right:null) 
+{
+    position: relative;
+
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;    
+}
+
+@mixin absolute($top:null, $bottom:null, $left:null, $right:null) 
+{
+    position: absolute;
+    
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;    
+}
+
+@mixin fixed($top:null, $bottom:null, $left:null, $right:null) 
+{
+    position: fixed;
+    
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;    
+}
+
+
+//-----------------------------Scrollbar---------------------------
+::-webkit-scrollbar
+{
+    width: 10px;
+} 
+
+::-webkit-scrollbar:horizontal
+{
+    width: 10px;
+    height: 10px;
+} 
+
+::-webkit-scrollbar-track:horizontal
+{
+    background: $bg;
+    box-shadow: inset 0 0 3px $bg;
+} 
+
+::-webkit-scrollbar-thumb
+{
+    background-color: $gr;
+    border-radius: 5px;
+
+    &:hover
+    {
+        background-color: $or;
+    }
+}
+
+::-webkit-scrollbar-thumb:horizontal
+{
+    background-color: $gr;
+    border-radius: 5px;
+
+    &:hover
+    {
+        background-color: $or;
+    }
+}
