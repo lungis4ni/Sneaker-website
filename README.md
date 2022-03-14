@@ -3,6 +3,7 @@
 # Languages
 * HTML
 * CSS
+* SASS
 * JAVASCRIPT
 
 ## Features
